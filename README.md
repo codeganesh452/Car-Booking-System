@@ -1,35 +1,70 @@
-# Car Booking System 🚗
+🚗 Car Booking System – Spring Boot
 
-A secure and scalable Spring Boot application for booking cars online.  
-This project includes **JWT authentication**, **role-based access**, and a clean **layered architecture**, making it suitable for real-world production use and backend portfolio demonstration.
+A simple Spring Boot application for managing car bookings.
+This project demonstrates Java, Spring Boot, REST APIs, and a clean layered backend structure.
 
----
+✨ Features
 
-## ✨ Features
+Add and manage car details
 
-- User registration & login with **JWT Authentication**
-- **Role-based Authorization** (Admin / User)
-- Browse available cars
-- Book cars securely
-- View user-specific booking history
-- RESTful API backend architecture
-- Centralized exception handling
+Book a car
 
----
+View available cars
 
-## 🧱 Tech Stack Used
+Cancel a booking
 
-| Layer / Component | Technology |
-|------------------|------------|
-| Backend Framework | Spring Boot |
-| Security          | Spring Security + JWT |
-| Database          | MySQL / PostgreSQL |
-| ORM               | Hibernate / JPA |
-| Build Tool        | Maven |
-| Testing / API     | Postman |
-| IDE               | Eclipse |
+REST API architecture
 
----
+Clean Controller → Service → Repository structure
 
-## 🏗️ Project Architecture (Layered)
+🧱 Tech Stack
+Component	Technology
+Backend Framework	Spring Boot
+Database	MySQL / H2 Database
+ORM	Hibernate / JPA
+Build Tool	Maven
+IDE	Eclipse / IntelliJ
+📁 Project Structure
+src
+ ┣ controller
+ ┣ service
+ ┣ repository
+ ┣ model
+ ┗ dto
 
+🚀 How to Run the Project
+
+Clone the repository
+
+git clone https://github.com/codeganesh452/Car-Booking-System
+
+
+Open the project in Eclipse or IntelliJ
+
+Update DB configuration in
+src/main/resources/application.properties
+
+Run the app using
+Run → Spring Boot App
+
+Access APIs at:
+
+http://localhost:8080
+
+📌 Sample API Endpoints
+Method	Endpoint	Description
+GET	/cars	Get all cars
+POST	/cars	Add a car
+POST	/book	Book a car
+DELETE	/cancel/{id}	Cancel booking
+🎯 Purpose
+
+Built to practice:
+
+Spring Boot fundamentals
+
+CRUD operations
+
+REST API development
+
+Basic backend design
