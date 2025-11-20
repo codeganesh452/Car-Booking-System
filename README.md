@@ -1,70 +1,76 @@
-🚗 Car Booking System – Spring Boot
+# **🚗 CAR BOOKING SYSTEM – SPRING BOOT**
 
-A simple Spring Boot application for managing car bookings.
-This project demonstrates Java, Spring Boot, REST APIs, and a clean layered backend structure.
+A simple Spring Boot application for managing car bookings.  
+This project demonstrates **Java**, **Spring Boot**, **REST APIs**, and a clean layered backend structure.
 
-✨ Features
+---
 
-Add and manage car details
+## **✨ Features**
 
-Book a car
+- Add and manage car details  
+- Book a car  
+- View available cars  
+- Cancel a booking  
+- REST API architecture  
+- Clean **Controller → Service → Repository** structure  
 
-View available cars
+---
 
-Cancel a booking
+## **🧱 Tech Stack**
 
-REST API architecture
+| Component | Technology |
+|----------|------------|
+| Backend Framework | Spring Boot |
+| Database | MySQL / H2 Database |
+| ORM | Hibernate / JPA |
+| Build Tool | Maven |
+| IDE | Eclipse / IntelliJ |
 
-Clean Controller → Service → Repository structure
+---
 
-🧱 Tech Stack
-Component	Technology
-Backend Framework	Spring Boot
-Database	MySQL / H2 Database
-ORM	Hibernate / JPA
-Build Tool	Maven
-IDE	Eclipse / IntelliJ
-📁 Project Structure
+## **📁 Project Structure**
+
 src
- ┣ controller
- ┣ service
- ┣ repository
- ┣ model
- ┗ dto
+┣ controller
+┣ service
+┣ repository
+┣ model
+┗ dto
 
-🚀 How to Run the Project
+---
 
-Clone the repository
+## **🚀 How to Run the Project**
 
+1. Clone the repository  
 git clone https://github.com/codeganesh452/Car-Booking-System
 
+2. Open the project in **Eclipse** or **IntelliJ**
 
-Open the project in Eclipse or IntelliJ
+3. Update DB configuration in:  
+`src/main/resources/application.properties`
 
-Update DB configuration in
-src/main/resources/application.properties
+4. Run the app using:  
+**Run → Spring Boot App**
 
-Run the app using
-Run → Spring Boot App
-
-Access APIs at:
-
+5. Access APIs at:  
 http://localhost:8080
+---
+## **📌 Sample API Endpoints**
 
-📌 Sample API Endpoints
-Method	Endpoint	Description
-GET	/cars	Get all cars
-POST	/cars	Add a car
-POST	/book	Book a car
-DELETE	/cancel/{id}	Cancel booking
-🎯 Purpose
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | /cars | Get all cars |
+| POST | /cars | Add a car |
+| POST | /book | Book a car |
+| DELETE | /cancel/{id} | Cancel booking |
+
+---
+
+## **🎯 Purpose**
 
 Built to practice:
 
-Spring Boot fundamentals
-
-CRUD operations
-
-REST API development
-
-Basic backend design
+- Spring Boot fundamentals  
+- CRUD operations  
+- REST API development  
+- Basic backend design
